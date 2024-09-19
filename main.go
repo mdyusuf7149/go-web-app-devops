@@ -12,7 +12,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 
 func projectPage(w http.ResponseWriter, r *http.Request) {
 	// Render the course html page
-	http.ServeFile(w, r, "static/.html")
+	http.ServeFile(w, r, "static/projects.html")
 }
 
 func aboutPage(w http.ResponseWriter, r *http.Request) {
