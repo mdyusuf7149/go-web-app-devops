@@ -1,4 +1,4 @@
-#This is deplyment manifest for web-app
+#Deployment for the application
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: mohdyusuf7149/go-web-app-devops:v1
+        image: mohdyusuf7149/go-web-app:v1
         ports:
         - containerPort: 8080
