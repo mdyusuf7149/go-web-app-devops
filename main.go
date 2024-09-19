@@ -10,7 +10,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "static/home.html")
 }
 
-func projectPage(w http.ResponseWriter, r *http.Request) {
+func projectsPage(w http.ResponseWriter, r *http.Request) {
 	// Render the course html page
 	http.ServeFile(w, r, "static/projects.html")
 }
@@ -28,7 +28,7 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 func main() {
 
 	http.HandleFunc("/home", homePage)
-	http.HandleFunc("/courses", projectPage)
+	http.HandleFunc("/projects", projectsPage)
 	http.HandleFunc("/about", aboutPage)
 	http.HandleFunc("/contact", contactPage)
 
